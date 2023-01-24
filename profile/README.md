@@ -1,3 +1,8 @@
+## Projektstruktur
+In jedem Repo liegt eine 'requirements.txt' mit einer Liste der notwendigen Python Bibliotheken. Diese werden im Docker Image automatisch installiert.
+Zudem ist der Eintrittspunkt jeweils ./src/main.py
+Etwaige Änderungen an Systemdateien (@Adrian) sollen als shell-script hinterlegt und in der Dockerfile aufgerufen werden, damit möglichst keine händischen Eingriffe zur Installation notwendig sind.
+
 ## Ports
 - REST Bildverarbeitung: 8090
 - REST Spielalgorithmus: 8093
